@@ -18,29 +18,20 @@ a{
     color: #000;
 }
 
-/*HEADER & FOOTER*/
+/*HEADER + FOOTER*/
 header, footer{
     width: 100%;
     padding: 20px 0px;
-    background: url("0.jpg") #4f4f4f;
-    box-shadow: 0px 0px 40px #333;
+    background: url("0.jpg") ;
+    
 }
 header{
     border-bottom: 2px solid #fff;
     height: 120px;
 }
-header h1{
-    color: white;
-    font-size: 1.5em;
-    width: 90%;
-    margin: 0 auto;
-}
-
-footer{
-    border-top: 2px solid #fff;
 }
 footer p{
-    width: 90%;
+    width: 10%;
     margin: 0 auto;
     color: #fff;
     text-align: center;
@@ -57,7 +48,7 @@ section{
     width: 80%;
     padding-bottom: 20px;
     margin: 20px auto;
-    box-shadow: 0px 0px 8px #bbb;
+    box-shadow: 0px 0px 10px #bbb;
     background-color: #fff;
 }
 
@@ -69,9 +60,11 @@ section > div{
     width: 90%;
 }
 
-/*SECTION INFOS*/
+/*INFO*/
+
+
 .photo{
-    text-align: right;
+    text-align: center;
 }
 .photo img{
     width: 250px;
@@ -79,10 +72,11 @@ section > div{
     border: 3px solid #fff;
     box-shadow: 0px 0px 10px #777;
     border-radius: 50%;
-    margin-top: -80px;
+    margin-top: 20px;
 }
 .prez{
     border-bottom: 2px dashed #ccc;
+   
 }
 .prez a{
     display: block;
@@ -93,6 +87,7 @@ section > div{
     background-color: #EA0;
     box-shadow: 0px 0px 10px #ccc;
     border-radius: 5px;
+    
 }
 .contact-flex{
     display: flex;
@@ -104,6 +99,7 @@ section > div{
 }
 .contact-flex p:last-child{
     flex: 0 0 60%;
+   
 }
 .social{
     display: flex;
@@ -115,6 +111,8 @@ section > div{
     height: 40px;
 }
 
+.indent { text-indent: 10px; }
+
 /*SECTION EXP ET FORMATION*/
 .exp{
     display: flex;
@@ -122,6 +120,7 @@ section > div{
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    text-indent: 10px;
 }
 .exp-info{
     display: flex;
@@ -171,13 +170,13 @@ section > div{
   grid-auto-rows: minmax(100px, auto);
 }
 .one {
-  grid-column: 2;
+  grid-column: 1/3;
   grid-row: 1;
 }
 .two { 
-  grid-column: 3;
+  grid-column: 2/3;
   grid-row: 1 ;
 }
 .three {
-  grid-column: 4;
+  grid-column: 3/3;
   grid-row: 1;
